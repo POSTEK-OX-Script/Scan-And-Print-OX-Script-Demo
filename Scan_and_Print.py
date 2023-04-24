@@ -1,4 +1,4 @@
-from pskfunc import *
+import ox_script
 
 # The following code is used to initialize the UI on the printer
 controller = UIInit(
@@ -23,6 +23,7 @@ while True:
         controller['Widget_' + str(time%2 +1)].update(cmd)
         data[time%2] = cmd
         time += 1
+        
         #After two successful scans, print the template barcode, the template file is command1.txt
         if time % 2 == 0 and time != 0:
             #Command1.txt is the label template file where we defined two input fields which we will update with the scanned data
@@ -33,6 +34,7 @@ while True:
             )
             #Sends the command to the printer to initate printing
             PTK_SendCmdToPrinter(cmdd)
+            
         elif time % 2 == 1 and time != 0:
            #After scanning the first barcode, the second input field is cleared
            controller['Widget_' + str(time%2)].update('--')
