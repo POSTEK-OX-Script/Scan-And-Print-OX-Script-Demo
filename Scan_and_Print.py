@@ -1,4 +1,4 @@
-import ox_script
+from ox_script import *
 
 # The following code is used to initialize the UI on the printer
 controller = UIInit(
