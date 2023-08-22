@@ -7,6 +7,9 @@ This code is designed to take in data from a external scanner through USB and pr
 A demonstration of what this script can do can be found here
 https://www.youtube.com/watch?v=qDKJzS-VcvI
 
+A tutorial video on walking through the development process of this script can be found here
+https://www.youtube.com/watch?v=2IPcM7ErJjY&t=44s
+
 ## Installation
 
 To run this code, you will need to have Python 3.8+ installed on your printer(which comes standard on all POSTEK Printers that support OX Script after May 2023). You will not be able to execute this code directly on your computer as it is intended to be executed on the printer
